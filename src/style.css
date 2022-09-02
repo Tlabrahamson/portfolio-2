@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(248, 250, 255);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Navbar Styles -------------------------------------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    position: fixed;
+    width: 100%;
+    /* background: #DBE2EF; */
+}
+
+header button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-basis: 20%;
+    font-size: 1.25rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-modal {
+    /* display: none; */
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    transition: all ease .3s;
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.contact-modal-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    display: flex;
+    opacity: 1;
+    overflow: hidden;
+    /* z-index: 2; */
+}
+
+/* Main Styles ----------------------------------------------------- */
+main {
+    margin: 0 auto;
+    padding: 2rem
+}
+
+main h2 {
+    font-size: 42px;
+    line-height: 1.25;
+    color: #112D4E;
+    font-weight: 700;
+}
+
+main h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2;
+    color: #3F72AF;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #303030;
+    font-weight: 300;
+}
+
+/* Hero Styles ----------------------------------------------------- */
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 1300px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.hero-text-container {
+    width: 100%;
+}
+
+.hero-spline-container {
+    width: 100%;
+    height: 500px;
+    background: #2d2d2d;
+}
+
+/* Project Card Styles --------------------------------------------- */
+.project-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 400px;
+    height: 425px;
+    overflow: hidden;
+}
+
+.project-card h3 {
+    padding: 1rem;
+}
+
+.project-card-image {
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+}
+
+.project-card-body {
+    padding: 1rem;
+}
+
+
+/* Footer Styles --------------------------------------------------- */
+
+footer {
+    padding: 2rem;
+}
+
+
+/* Media Query 768px --------------------------------------------------- */
+
+/* Hero Styles 768px ----------------------------------------------------- */
+@media (max-width: 768px) {
+    .hero-container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column-reverse;
+        margin-top: 6rem;
+    }
+
+    .hero-text-container {
+        width: 100%;
+    }
+
+    .hero-spline-container {
+        width: 400px;
+        height: 400px;
+    }
+}
