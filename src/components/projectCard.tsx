@@ -8,7 +8,7 @@ interface ProjectCardProps {
     projectLink?: string;
 }
 
-export default function projectCard({projectTitle, projectImageUrl, projectImageAlt, projectDescription, projectLink}: ProjectCardProps) {
+export default function ProjectCard({projectTitle, projectImageUrl, projectImageAlt, projectDescription, projectLink}: ProjectCardProps) {
   return (
     <div className='project-card'>
         <img className='project-card-image' src={projectImageUrl} alt={projectImageAlt} />

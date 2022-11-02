@@ -6,16 +6,18 @@ interface NavbarProps {
   // Navbar Props Here
 } 
 
-export default function navbar<NavbarProps>() {
+export default function Navbar<NavbarProps>() {
 
   const toggleContactModal = () => {
     let modal = document.querySelector('.contact-modal');
+    let modalContent = document.querySelector('.contact-modal-content');
     modal?.classList.toggle('active');
+    modalContent?.classList.toggle('active');
   }
 
   return (
     <header>
-      <h1>LOGO</h1>
+      <h1 className='logo'>TA</h1>
       {/* <ul className='nav-list'>
         <li className='nav-link'><a href="/">About</a></li>
         <li className='nav-link'><a href="/">Projects</a></li>

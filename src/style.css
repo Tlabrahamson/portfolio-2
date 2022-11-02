@@ -5,7 +5,7 @@
 }
 
 body {
-    background: rgb(248, 250, 255);
+    background: #f8faff;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -18,6 +18,10 @@ header {
     position: fixed;
     width: 100%;
     /* background: #DBE2EF; */
+}
+
+header h1 {
+    color: #112D4E;
 }
 
 header button {
@@ -51,20 +55,21 @@ header button {
     left: 50%;
     transform: translate(-50%, -50%); */
     transition: all ease .3s;
-    background: #fff;
+    background: #f8faff;
     width: 100vw;
-    height: 100vh;
+    height: 0;
     z-index: -1;
 }
 
 .contact-modal-content {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: all ease .3s;
     padding: 2rem;
+    width: 100vw;
+    height: 0;
 }
 
 .contact-modal-icon-container {
@@ -93,6 +98,8 @@ header button {
     display: flex;
     opacity: 1;
     overflow: hidden;
+    width: 100vw;
+    height: 100vh;
     /* z-index: 2; */
 }
 
@@ -141,9 +148,13 @@ main p {
 
 .hero-spline-container {
     width: 100%;
-    height: 50%;
-    background: #2d2d2d;
+    height: 100%;
 }
+
+/* .hero-spline-container img {
+    width: 100%;
+    height: 100%;
+} */
 
 /* Project Card Styles --------------------------------------------- */
 .project-card {
