@@ -1,8 +1,10 @@
-import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 interface NavbarProps {
   // Navbar Props Here
-}
+} 
 
 export default function navbar<NavbarProps>() {
 
@@ -22,7 +24,20 @@ export default function navbar<NavbarProps>() {
 
       <div className='contact-modal'>
         <div className='contact-modal-content'>
-          <h3>This is how you can contact me.</h3>
+          <h3>If you'd like to chat, there are a couple ways you can contact me:</h3>
+          <div className='contact-modal-icon-container'>
+            <div className='contact-modal-icons'>
+              <a href="https://www.linkedin.com/in/tim-abrahamson-b6a34a174/" target='_blank' className='contact-modal-link'>
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a href="https://github.com/Tlabrahamson" target='_blank' className='contact-modal-link'>
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a href="mailto:timabrahamson0@gmail.com" target='_blank' className='contact-modal-link'>
+                <FontAwesomeIcon icon={faSquareEnvelope} />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </header>

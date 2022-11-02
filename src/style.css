@@ -42,7 +42,7 @@ header button {
 }
 
 .contact-modal {
-    /* display: none; */
+    display: hidden;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -63,6 +63,30 @@ header button {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.contact-modal-icon-container {
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.contact-modal-icons {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3rem;
+}
+
+.contact-modal-link {
+    transition: all .3s ease;
+    color: #112D4E;
+}
+
+.contact-modal-link:hover {
+    color: #3F72AF;
 }
 
 .active {
@@ -75,7 +99,8 @@ header button {
 /* Main Styles ----------------------------------------------------- */
 main {
     margin: 0 auto;
-    padding: 2rem
+    padding: 2rem;
+    z-index: 1;
 }
 
 main h2 {
@@ -116,7 +141,7 @@ main p {
 
 .hero-spline-container {
     width: 100%;
-    height: 500px;
+    height: 50%;
     background: #2d2d2d;
 }
 
@@ -125,12 +150,12 @@ main p {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 400px;
-    height: 425px;
+    height: 100%;
     overflow: hidden;
 }
 
 .project-card h3 {
-    padding: 1rem;
+    padding: .5rem 1rem;
 }
 
 .project-card-image {
@@ -140,14 +165,14 @@ main p {
 }
 
 .project-card-body {
-    padding: 1rem;
+    padding: .5rem 1rem;
 }
 
 
 /* Footer Styles --------------------------------------------------- */
 
 footer {
-    padding: 2rem;
+    padding: 1rem 2rem;
 }
 
 
@@ -169,5 +194,6 @@ footer {
     .hero-spline-container {
         width: 400px;
         height: 400px;
+        margin-bottom: 4rem;
     }
 }
