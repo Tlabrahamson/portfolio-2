@@ -15,7 +15,7 @@ export default function Hero() {
             <h2>Hello There.</h2>
             <h3>I'm Tim Abrahamson</h3>
             <p>
-                I'm a software devloper based out of Birmingham, AL. 
+                I'm a software developer based out of Birmingham, AL. 
             </p>
         </div>
         <div className='hero-spline-container'>

@@ -15,10 +15,23 @@ export default function Navbar<NavbarProps>() {
     modal?.classList.toggle('active');
     modalContent?.classList.toggle('active');
     avatarContainer?.classList.toggle('modal-active');
+    document.body.classList.toggle('body-active');
+
+  }
+
+  window.onscroll = function() {addNavbarBackground()};
+  
+  const addNavbarBackground = () => {
+    let navbar = document.getElementById('navbar')
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      navbar!.style.background = "#dde7ff7b";
+    } else {
+      navbar!.style.background = "none";
+    }
   }
 
   return (
-    <header>
+    <header id="navbar">
       <h1 className='logo'>TA</h1>
       {/* <ul className='nav-list'>
         <li className='nav-link'><a href="/">About</a></li>
