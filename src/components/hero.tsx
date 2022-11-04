@@ -1,7 +1,8 @@
 import React, { useEffect, useState, Suspense } from 'react'
-import Spline from '@splinetool/react-spline';
-// import avatar from '../images/avatar.png';
-import blob from '../images/blob.svg';
+// import Spline from '@splinetool/react-spline';
+import avatar from '../images/avatar.png';
+
+const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 
 export default function Hero() {
@@ -19,8 +20,11 @@ export default function Hero() {
             </p>
         </div>
         <div className='hero-spline-container'>
-            {/* <img src={blob} alt="Blob" /> */}
-            <Spline scene="https://prod.spline.design/1DmX4NR381ndC3yM/scene.splinecode" />
+            <Suspense fallback={<img src={avatar} alt="avatar" />}>
+              <div>
+                <Spline scene="https://prod.spline.design/1DmX4NR381ndC3yM/scene.splinecode" />
+              </div>
+            </Suspense>
         </div>
     </div>
   )
