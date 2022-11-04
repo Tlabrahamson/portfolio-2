@@ -11,8 +11,10 @@ export default function Navbar<NavbarProps>() {
   const toggleContactModal = () => {
     let modal = document.querySelector('.contact-modal');
     let modalContent = document.querySelector('.contact-modal-content');
+    let avatarContainer = document.querySelector('.hero-spline-container');
     modal?.classList.toggle('active');
     modalContent?.classList.toggle('active');
+    avatarContainer?.classList.toggle('modal-active');
   }
 
   return (
