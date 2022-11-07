@@ -29,7 +29,6 @@ img {
     transition: all ease 0.3s;
     z-index: 5;
     /* background: #DBE2EF; */
-    backdrop-filter: blur(5px);
 }
 
 #navbar h1 {
@@ -223,10 +222,10 @@ footer {
 }
 
 
-/* Media Query 768px --------------------------------------------------- */
+/* Media Query 1300px --------------------------------------------------- */
 
-/* Hero Styles 768px ----------------------------------------------------- */
-@media (max-width: 768px) {
+/* Hero Styles 1300px ----------------------------------------------------- */
+@media (max-width: 1300px) {
     .hero-container {
         width: 100%;
         height: 100%;
@@ -245,6 +244,28 @@ footer {
         margin-bottom: 4rem;
         justify-content: center;
     }
+}
+
+
+/* Media Query 768px --------------------------------------------------- */
+
+/* Hero Styles 768px ----------------------------------------------------- */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    .hero-spline-container {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 4rem;
+        justify-content: center;
+    }
+}
+
+.navbar-active {
+    backdrop-filter: blur(5px);
+    background: #dde7ff7b;
 }
 
 .modal-active {

@@ -24,9 +24,9 @@ export default function Navbar<NavbarProps>() {
   const addNavbarBackground = () => {
     let navbar = document.getElementById('navbar')
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      navbar!.style.background = "#dde7ff7b";
+      navbar!.classList.add('navbar-active');
     } else {
-      navbar!.style.background = "none";
+      navbar!.classList.remove('navbar-active');
     }
   }
 
