@@ -191,6 +191,35 @@ main p {
     z-index: -1;
 }
 
+/* About Styles ---------------------------------------------------- */
+
+.about-container {
+    position: relative;
+    margin-bottom: 8rem;
+}
+
+.about-container::before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 300px;
+    background: #112D4E;
+    z-index: -1;
+    margin-left: -2rem;
+}
+
+.about-experience-container {
+    padding: 2rem;
+}
+
+.about-experience-container h2 {
+    color: #EDBE86;
+}
+
+.about-experience-container p {
+    color: #f8faff;
+}
+
 /* Project Card Styles --------------------------------------------- */
 .project-card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -253,6 +282,13 @@ footer {
 @media (max-width: 768px) {
     main {
         padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-container {
+        justify-content: center;
     }
 
     .hero-spline-container {
@@ -261,7 +297,22 @@ footer {
         margin-bottom: 4rem;
         justify-content: center;
     }
+
+    /* About Styles ---------------------------------------------------- */
+    
+    .about-container {
+        position: relative;
+    }
+    
+    .about-container::before {
+        width: 200vw;
+        margin-left: -12rem;
+    }
 }
+
+
+
+/* Active Styles --------------------------------------------------- */
 
 .navbar-active {
     backdrop-filter: blur(5px);

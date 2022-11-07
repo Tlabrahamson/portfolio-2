@@ -16,7 +16,6 @@ export default function Navbar<NavbarProps>() {
     modalContent?.classList.toggle('active');
     avatarContainer?.classList.toggle('modal-active');
     document.body.classList.toggle('body-active');
-
   }
 
   window.onscroll = function() {addNavbarBackground()};

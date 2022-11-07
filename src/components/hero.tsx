@@ -1,14 +1,8 @@
 import React, { useEffect, useState, Suspense } from 'react'
-// import Spline from '@splinetool/react-spline';
-import avatar from '../images/avatar.png';
-
-const Spline = React.lazy(() => import('@splinetool/react-spline'));
-
+import Spline from '@splinetool/react-spline';
+// import avatar from '../images/avatar.png';
 
 export default function Hero() {
-
-// Need to look into having a loading state for the spline component...it takes too long to load. Image placeholder?
-// const [loading, isLoading] = useState<boolean>(true);
 
   return (
     <div className='hero-container'>
@@ -20,11 +14,9 @@ export default function Hero() {
             </p>
         </div>
         <div className='hero-spline-container'>
-            <Suspense fallback={<img src={avatar} alt="avatar" />}>
-              <div>
-                <Spline scene="https://prod.spline.design/1DmX4NR381ndC3yM/scene.splinecode" />
-              </div>
-            </Suspense>
+            <div>
+              <Spline scene="https://prod.spline.design/1DmX4NR381ndC3yM/scene.splinecode" />
+            </div>
         </div>
     </div>
   )
