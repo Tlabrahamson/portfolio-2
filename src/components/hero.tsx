@@ -7,11 +7,7 @@ export default function Hero() {
   return (
     <div className='hero-container'>
         <div className='hero-text-container'>
-            <h2>Hello There.</h2>
-            <h3>I'm Tim Abrahamson</h3>
-            <p>
-                I'm a software developer based out of Birmingham, AL. 
-            </p>
+            <h2 className='large-heading'>Hello There.<br/>I'm <span>Tim Abrahamson</span> </h2>
         </div>
         <div className='hero-spline-container'>
             <div>
