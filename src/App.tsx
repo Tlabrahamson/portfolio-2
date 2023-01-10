@@ -2,11 +2,9 @@ import React from 'react';
 import Navbar from './components/navbar';
 import Hero from './components/hero';
 import About from './components/about';
-import ProjectCard from './components/projectCard';
+import Projects from './components/projects';
 import Footer from './components/footer';
 import './style.css';
-// Maybe I should look into serving images from Cloudinary...
-import Synth from './images/synth.jpg';
 
 function App() {
   return (
@@ -15,7 +13,7 @@ function App() {
       <main>
         <Hero/>
         <About/>
-        {/* <ProjectCard projectTitle='Synth.' projectImageUrl={Synth} projectDescription='Synth. was built purely for aesthetic. Cyberpunk style was popular at the time.' projectLink='https://synth-wav.netlify.app/' /> */}
+        <Projects/>
       </main>
       <Footer/>
     </div>
