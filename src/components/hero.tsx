@@ -1,4 +1,3 @@
-// import React, { useEffect, useState, Suspense } from 'react'
 import Spline from '@splinetool/react-spline';
 
 export default function Hero() {
