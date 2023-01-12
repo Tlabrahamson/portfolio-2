@@ -6,8 +6,8 @@ export default function ProjectCard({...props}) {
 
   return (
     <div className='project-card-container'>
-        <h4>{projectCardTitle}</h4>
-        <img src={projectCardImage} alt={projectCardImageAlt} />
+        <h4 className='small-heading'>{projectCardTitle}</h4>
+        <img className='card-image' src={projectCardImage} alt={projectCardImageAlt} />
         <p>{projectCardDescription}</p>
         <a href={projectCardLink} target='_blank' rel="noreferrer">Live Site</a>
     </div>

@@ -44,6 +44,7 @@ img {
 .small-heading {
     font-size: 24px;
     font-family: 'DM Serif Display', serif;
+    color: var(--primary);
 }
 
 /* Navbar Styles -------------------------------------------------- */
@@ -79,7 +80,7 @@ img {
 
 #navbar button:hover {
     background: var(--primary);
-    color: transparent;
+    color: var(--white);
 }
 
 .nav-list {
@@ -223,6 +224,7 @@ main p {
 
 .hero-spline-container img {
     z-index: -1;
+    width: 100%;
 }
 
 /* Container/Section Styles ---------------------------------------------------- */
@@ -242,19 +244,38 @@ main p {
     display: flex;
     flex-wrap: wrap;
     column-gap: 2rem;
-    row-gap: 4rem;
+    row-gap: 8rem;
     margin-top: 6rem;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .project-card-container {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     padding: 1.5rem 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    transition: var(--hover-transition);
+}
+
+.project-card-container img {
+    width: 100%;
+    padding: 1rem 0;
+    filter: grayscale(1);
+    transition: var(--hover-transition);
+}
+
+.project-card-container p {
+    padding-bottom: 1rem;
 }
 
 .project-card-container a {
     color: inherit;
+}
+
+.project-card-container:hover > .card-image {
+    filter: grayscale(0);
 }
 
 
