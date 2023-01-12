@@ -23,6 +23,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 img {
     -khtml-user-select: none;
     -o-user-select: none;
