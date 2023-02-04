@@ -259,7 +259,7 @@ main p {
 
 .about-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .about-container h3,
@@ -270,14 +270,14 @@ main p {
 .about-container::after {
     content: '';
     position: absolute;
-    width: 100vw;
+    width: 50vw;
     height: 400px;
-    left: 45%;
+    left: 25%;
     top: 0;
     z-index: -1;
     background: var(--primary);
     /* border-radius: 140px 0 0 70px; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .about-section,

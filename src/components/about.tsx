@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
     let currentYear = new Date().getFullYear();
-    let webDevStartDate = currentYear - 2019;
+    let webDevStartDate = currentYear - 2020;
     let frameworkStartDate = currentYear - 2020;
     let softwareStartDate = currentYear - 2021;
 
