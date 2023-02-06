@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <div className='hero-container'>
         <div className='hero-text-container'>
-            <h2 className='large-heading'>Hello There.<br/>I'm <span>Tim Abrahamson</span> </h2>
+            <h2 className='large-heading'>Hello There. I'm <span>Tim Abrahamson</span> </h2>
         </div>
         <div className='hero-spline-container'>
             <div>

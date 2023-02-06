@@ -420,6 +420,10 @@ footer {
         padding: var(--mobile-container-padding);
     }
 
+    .hero-text-container {
+        text-align: center;
+    } 
+
     .about-container {
         width: 100%;
     }
@@ -475,10 +479,6 @@ footer {
         height: 300px;
         margin-bottom: 4rem;
         justify-content: center;
-    }
-
-    .hero-text-container .large-heading {
-        white-space: nowrap;
     }
 
     .contact-modal-icons {
