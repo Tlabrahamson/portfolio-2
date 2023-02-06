@@ -7,8 +7,8 @@
     --hover-transition: all ease .3s;
     --container-spacing: 8rem;
     --mobile-container-spacing: 6rem;
-    --container-padding: 0 4rem;
-    --mobile-container-padding: 0 2rem;
+    --container-padding: 0 2rem;
+    --mobile-container-padding: 0 1rem;
 }
 
 * {
@@ -53,11 +53,11 @@ img {
 
 
 .spinning-loader {
-    border: 16px solid var(--primary); /* Border color */
-    border-top: 16px solid var(--secondary); /* Loader color */
+    border: 8px solid var(--primary); /* Border color */
+    border-top: 8px solid transparent; /* Loader color */
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 60px;
+    height: 60px;
     animation: spin 2s linear infinite;
 }
   
@@ -275,17 +275,17 @@ main p {
 
 .about-container {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    background: var(--primary);
+    /* border: solid 2px var(--primary); */
     width: 50%;
-    margin: 0 auto;
+    margin: 0 0 8rem 0;
     padding: 2rem 0;
 }
 
 .about-container h3,
 .about-container p {
-    color: var(--white);
+    color: var(--primary);
 }
 
 .about-container::after {
@@ -293,10 +293,10 @@ main p {
     position: absolute;
     width: 100px;
     height: 100px;
-    left: -1%;
-    top: -2%;
+    left: -50px;
+    top: -50px;
     z-index: -1;
-    background: var(--secondary);
+    /* border: solid 2px var(--secondary); */
     /* border-radius: 140px 0 0 70px; */
     /* border-radius: 10px; */
 }
@@ -309,7 +309,6 @@ main p {
 .about-section {
     max-width: 700px;
     width: 100%;
-    margin-right: 8rem;
 }
 
 .projects-grid {
@@ -324,7 +323,7 @@ main p {
 
 .project-card-container {
     width: 100%;
-    max-width: 750px;
+    max-width: 400px;
     padding: 1.5rem 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
@@ -399,12 +398,6 @@ footer {
         height: 400px;
         margin-bottom: 4rem;
         justify-content: center;
-    }
-
-    .about-container::after { 
-        left: -5%;
-        height: 350px;
-        border-radius: 0;
     }
 
     .about-section {
@@ -484,6 +477,10 @@ footer {
         justify-content: center;
     }
 
+    .hero-text-container .large-heading {
+        white-space: nowrap;
+    }
+
     .contact-modal-icons {
         width: 80%;
         justify-content: space-between;
@@ -494,6 +491,10 @@ footer {
     .about-container {
         position: relative;
         margin-bottom: var(--mobile-container-spacing);
+    }
+
+    .projects-grid {
+        justify-content: center;
     }
 }
 
