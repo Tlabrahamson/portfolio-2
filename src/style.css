@@ -277,7 +277,7 @@ main p {
     justify-content: center;
     align-items: center;
     margin: 0 auto 8rem auto;
-    padding: 2rem 0;
+    padding: 2rem 0 6rem 0;
     width: 1000px;
 }
 
@@ -480,6 +480,7 @@ footer {
     .about-container {
         position: relative;
         margin-bottom: var(--mobile-container-spacing);
+        padding: 2rem 0;
     }
 
     .wave,
