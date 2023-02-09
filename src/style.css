@@ -6,7 +6,7 @@
     --white: #DBE2EF;
     --hover-transition: all ease .3s;
     --container-spacing: 8rem;
-    --mobile-container-spacing: 6rem;
+    --mobile-container-spacing: 3rem;
     --container-padding: 0 2rem;
     --mobile-container-padding: 0 1rem;
 }
@@ -64,6 +64,13 @@ img {
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+@media (min-width: 1920px) {
+    .wave,
+    .second-wave { 
+        width: 100%;
+    }
 }
 
 /* Navbar Styles -------------------------------------------------- */
@@ -218,19 +225,6 @@ main p {
     position: relative;
 }
 
-/* .hero-text-container:after {
-    position: absolute;
-    content: '';
-    width: 400px;
-    height: 400px;
-    background: var(--primary);
-    top: 8rem;
-    left: -20rem;
-    border-radius: 50%;
-    z-index: -1;
-    opacity: .1;
-} */
-
 .large-heading span {
     color: var(--secondary);
     white-space: nowrap;
@@ -246,22 +240,28 @@ main p {
     justify-content: center;
 }
 
-/* .hero-spline-container:after {
-    position: absolute;
-    content: '';
-    width: 700px;
-    height: 700px;
-    background: var(--secondary);
-    top: -24rem;
-    right: -24rem;
-    border-radius: 50%;
-    z-index: -1;
-    opacity: .5;
-} */
-
 .hero-spline-container img {
     z-index: -1;
     width: 100%;
+}
+
+.about-background {
+    background: var(--primary);
+    position: relative;
+}
+
+.wave {
+    position: absolute;
+    top: -100px;
+    object-position: bottom;
+    z-index: -1;
+}
+
+.second-wave {
+    position: absolute;
+    rotate: 180deg;
+    bottom: -100px;
+    z-index: -1;
 }
 
 /* Container/Section Styles ---------------------------------------------------- */
@@ -283,26 +283,8 @@ main p {
 
 .about-container h3,
 .about-container p {
-    color: var(--primary);
+    color: var(--white);
 }
-
-.about-container::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    left: -50px;
-    top: -50px;
-    z-index: -1;
-    /* border: solid 2px var(--secondary); */
-    /* border-radius: 140px 0 0 70px; */
-    /* border-radius: 10px; */
-}
-/* 
-.about-section,
-.projects-section {
-    padding: var(--container-padding);
-} */
 
 .about-section {
     /* max-width: 700px; */
@@ -498,6 +480,11 @@ footer {
     .about-container {
         position: relative;
         margin-bottom: var(--mobile-container-spacing);
+    }
+
+    .wave,
+    .second-wave {
+        display: none;
     }
 
     .projects-grid {

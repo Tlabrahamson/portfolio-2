@@ -28,7 +28,7 @@ export default function Projects() {
                     projectCardTitle="Cocktail Roulette" 
                     projectCardImage="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1673474335/Portfolio/cocktail-roulette_vfxhdy.webp" 
                     projectCardImageAlt="The Cocktail Roulette Project" 
-                    projectCardDescription="Cocktail Roulette is a random cocktail generator. It's built with React and uses the API from www.thecocktaildb.com to fetch 
+                    projectCardDescription="Cocktail Roulette is a random cocktail generator. It uses the API from www.thecocktaildb.com to fetch 
                     a random cocktail with an image, ingredients, recommended glass, etc."
                     projectCardLink="https://cocktail-roulette.netlify.app/"
                 />
@@ -37,7 +37,7 @@ export default function Projects() {
                     projectCardTitle="Alphabetty" 
                     projectCardImage="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1673473752/Portfolio/alphabetty_wywv4e.webp" 
                     projectCardImageAlt="The Alphabetty Project" 
-                    projectCardDescription="Alphabetty is an app I made for my kids when they were younger and starting to learn the alphabet. It has a fixed scroll and 
+                    projectCardDescription="Alphabetty is an app I made for my kids when they were younger and beginning to learn the alphabet. It has a fixed scroll and 
                     uses SVG to draw out each letter."
                     projectCardLink="https://alphabetty.netlify.app/"
                 />
@@ -46,8 +46,7 @@ export default function Projects() {
                     projectCardTitle="Synth." 
                     projectCardImage="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1673473752/Portfolio/synth_huejza.webp" 
                     projectCardImageAlt="The Synth. Project" 
-                    projectCardDescription="Synth. is a website I designed and built to focus on synthwave aesthetic. It serves no real purpose and is populated with 
-                    placeholder text. I thought the colors turned out nice."
+                    projectCardDescription="Synth. is a colorful website I built using a synthwave color scheme. I dig the aesthetic."
                     projectCardLink="https://synth-wav.netlify.app/"
                 />
                 {/* Dodeca */}
@@ -55,8 +54,8 @@ export default function Projects() {
                     projectCardTitle="Dodeca" 
                     projectCardImage="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1673473752/Portfolio/dodeca_xehwd4.webp" 
                     projectCardImageAlt="The Dodeca Project" 
-                    projectCardDescription="Dodcea is website that I designed with Figma. I was going through a phase where I enjoyed designing landing pages
-                    and building them out with React."
+                    projectCardDescription="Dodcea is a website that I designed with Figma. I was going through a phase where I enjoyed designing landing pages
+                    and building them out."
                     projectCardLink="https://dodeca.netlify.app/"
                 />
             </div>
