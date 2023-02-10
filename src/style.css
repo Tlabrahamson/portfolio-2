@@ -97,7 +97,7 @@ img {
     color: var(--primary);
     border: solid 2px var(--primary);
     background: transparent;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     z-index: 4;
@@ -147,6 +147,7 @@ img {
     padding: 2rem;
     width: 100vw;
     height: 0;
+    pointer-events: none;
 }
 
 .contact-modal-icon-container {
@@ -178,6 +179,7 @@ img {
     width: 100vw;
     height: 100vh;
     z-index: 3;
+    pointer-events: all;
 }
 
 /* Main Styles ----------------------------------------------------- */
@@ -615,9 +617,17 @@ footer {
         border-radius: 6px;
     }
 
+    .projects-container {
+        margin-bottom: 2rem;
+    }
+
     .projects-grid {
         justify-content: center;
+        row-gap: 4rem;
+        margin-top: 4rem;
     }
+
+
 }
 
 @media (max-width: 456px) {
