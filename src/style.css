@@ -376,6 +376,7 @@ main p {
     background-color: white;
     position: relative;
     border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(82, 82, 82, 0.2), 0 6px 20px 0 rgba(155, 155, 155, 0.19);
 }
 
 .projects-container {
