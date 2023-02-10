@@ -2,8 +2,8 @@
 :root {
     --primary: #112D4E;
     --secondary: #0296bb;
-    --background: #dde7ff7b;
-    --white: #DBE2EF;
+    --background: #f1f5ff;
+    --white: #f7faff;
     --hover-transition: all ease .3s;
     --container-spacing: 8rem;
     --mobile-container-spacing: 3rem;
@@ -317,17 +317,18 @@ main p {
     position: relative;
     background-color: inherit;
     width: 50%;
+    color: var(--primary);
 }
 
 .timeline-container::after {
     content: '';
     position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
+    width: 12px;
+    height: 12px;
+    right: -10px;
     background-color: white;
-    border: 4px solid #FF9F55;
-    top: 15px;
+    border: 4px solid #e7b350;
+    top: 22px;
     border-radius: 50%;
     z-index: 1;
 }
@@ -367,7 +368,7 @@ main p {
 }
 
 .right::after {
-    left: -16px;
+    left: -10px;
 }
 
 .timeline-content {
@@ -396,11 +397,12 @@ main p {
     width: 100%;
     max-width: 400px;
     padding: 1.5rem 1rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(82, 82, 82, 0.2), 0 6px 20px 0 rgba(155, 155, 155, 0.19);
     cursor: pointer;
     transition: var(--hover-transition);
     text-decoration: none;
     position: relative;
+    background: var(--white);
 }
 
 .project-card-container img {
@@ -572,6 +574,44 @@ footer {
     .wave,
     .second-wave {
         display: none;
+    }
+
+    .timeline-section {
+        margin-bottom: var(--mobile-container-spacing);
+    }
+    
+    .timeline-container {
+        padding: 10px 40px;
+        width: 100%;
+        z-index: 1;
+        margin: 0 auto;
+    }
+    
+    .timeline-container::after {
+        display: none;
+    }
+    
+    .left {
+        left: 0;
+    }
+    
+    .right {
+        left: 0;
+    }
+    
+    .left::before {
+        display: none;
+    }
+    
+    .right::before {
+        display: none;
+    }
+    
+    .timeline-content {
+        padding: 20px 30px;
+        background-color: white;
+        position: relative;
+        border-radius: 6px;
     }
 
     .projects-grid {

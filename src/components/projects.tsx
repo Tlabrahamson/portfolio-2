@@ -15,14 +15,14 @@ export default function Projects() {
 
             <div className="projects-grid">
                 {/* Employ. The backend no longer works because Heroku deleted all free accounts! Wot? */}
-                {/* <ProjectCard 
+                <ProjectCard 
                     projectCardTitle="Employ." 
-                    projectCardImage="" 
+                    projectCardImage="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1676005845/Portfolio/employ_hzf2wu.webp" 
                     projectCardImageAlt="The Employ. Project" 
                     projectCardDescription="Employ. is a fullstack job listing/job seeking website. It's built with React as frontend and node as a 
-                    backend. I used MongoDB Atlas as the database to store user and job information."
+                    backend. I used MongoDB Atlas as the database."
                     projectCardLink="https://jobs-employ.netlify.app/"
-                /> */}
+                />
                 {/* Cocktail Roulette */}
                 <ProjectCard 
                     projectCardTitle="Cocktail Roulette" 
