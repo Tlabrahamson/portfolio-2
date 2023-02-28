@@ -4,6 +4,8 @@
     --secondary: #0296bb;
     --background: #f1f5ff;
     --white: #f7faff;
+    --about-bg: #112D4E;
+    --active-nav-bg: #dde7ff7b; 
     --hover-transition: all ease .3s;
     --container-spacing: 8rem;
     --mobile-container-spacing: 3rem;
@@ -12,10 +14,11 @@
 }
 
 [data-theme='dark'] {
-    --primary: #fff;
-    --secondary: #a1a1a1;
-    --background: #1d1d1d;
-    --white: invert(100%) sepia(4%) saturate(1%) hue-rotate(318deg) brightness(105%) contrast(100%);
+    --primary: #f4d676;
+    --secondary: #ff1690;
+    --background: #0d0221;
+    --about-bg: #160040;
+    --active-nav-bg: #2222227b;
 }
 
 * {
@@ -146,7 +149,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%); */
     transition: var(--hover-transition);
-    background: var(--white);
+    background: var(--background);
     width: 100vw;
     height: 0;
     z-index: 3;
@@ -262,7 +265,7 @@ main p {
 }
 
 .about-background {
-    background: var(--primary);
+    background: var(--about-bg);
     position: relative;
 }
 
@@ -271,7 +274,6 @@ main p {
     top: -100px;
     object-position: bottom;
     z-index: 1;
-    filter: var(--white);
 }
 
 .second-wave {
@@ -279,7 +281,11 @@ main p {
     rotate: 180deg;
     bottom: -100px;
     z-index: 1;
-    filter: var(--white);
+}
+
+.wave #Vector,
+.second-wave #Vector-two {
+    fill: var(--about-bg);
 }
 
 /* Container/Section Styles ---------------------------------------------------- */
@@ -323,7 +329,7 @@ main p {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: white;
+    background-color: var(--white);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -344,8 +350,8 @@ main p {
     width: 12px;
     height: 12px;
     right: -10px;
-    background-color: white;
-    border: 4px solid #e7b350;
+    background-color: var(--white);
+    border: 4px solid var(--secondary);
     top: 22px;
     border-radius: 50%;
     z-index: 1;
@@ -367,9 +373,9 @@ main p {
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid white;
+    border: medium solid var(--white);
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent var(--white);
 }
 
 .right::before {
@@ -380,9 +386,9 @@ main p {
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid white;
+    border: medium solid var(--white);
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent var(--white) transparent transparent;
 }
 
 .right::after {
@@ -391,10 +397,14 @@ main p {
 
 .timeline-content {
     padding: 20px 30px;
-    background-color: white;
+    background-color: var(--white);
     position: relative;
     border-radius: 6px;
     box-shadow: 0 4px 8px 0 rgba(82, 82, 82, 0.2), 0 6px 20px 0 rgba(155, 155, 155, 0.19);
+}
+
+.timeline-content h4 {
+    color: var(--about-bg);
 }
 
 .projects-container {
@@ -421,7 +431,11 @@ main p {
     transition: var(--hover-transition);
     text-decoration: none;
     position: relative;
-    background: var(--background);
+    background: var(--white);
+}
+
+.project-card-container h4 {
+    color: var(--about-bg);
 }
 
 .project-card-container img {
@@ -448,6 +462,10 @@ main p {
 
 footer {
     padding: 1rem 2rem;
+}
+
+.no-container-text {
+    color: var(--primary);
 }
 
 
@@ -658,7 +676,7 @@ footer {
 
 .navbar-active {
     backdrop-filter: blur(5px);
-    background: #dde7ff7b;
+    background: var(--active-nav-bg);
 }
 
 .modal-active {

@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <footer>
-        <p>
+        <p className='no-container-text'>
             &copy; {year} Tim Abrahamson
         </p>
     </footer>

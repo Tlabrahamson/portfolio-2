@@ -8,7 +8,7 @@ export default function Projects() {
         <div className='projects-section'>
             <div>
                 <h3 className='large-heading'>Projects<span>:</span></h3>
-                <p>
+                <p className='no-container-text'>
                     Here are some projects I created before working full-time as a dev:
                 </p>
             </div>

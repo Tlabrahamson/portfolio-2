@@ -37,7 +37,7 @@ export default function Navbar() {
 
       <div className='contact-modal'>
         <div className='contact-modal-content'>
-          <p>If you'd like to chat, there are a few ways you can contact me:</p>
+          <p className='no-container-text'>If you'd like to chat, there are a few ways you can contact me:</p>
           <div className='contact-modal-icon-container'>
             <div className='contact-modal-icons'>
               <a href="https://www.linkedin.com/in/tim-abrahamson-b6a34a174/" target='_blank' rel='noreferrer' aria-label="Tim Abrahamson's LinkedIn" className='contact-modal-link'>
