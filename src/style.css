@@ -11,16 +11,24 @@
     --mobile-container-padding: 0 1rem;
 }
 
+[data-theme='dark'] {
+    --primary: #fff;
+    --secondary: #a1a1a1;
+    --background: #1d1d1d;
+    --white: invert(100%) sepia(4%) saturate(1%) hue-rotate(318deg) brightness(105%) contrast(100%);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+.App {
     background: var(--background);
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
+    transition: var(--hover-transition);
 }
 
 html {
@@ -74,6 +82,12 @@ img {
 }
 
 /* Navbar Styles -------------------------------------------------- */
+
+.theme-select {
+    position: fixed;
+    z-index: 6;
+}
+
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -256,14 +270,16 @@ main p {
     position: absolute;
     top: -100px;
     object-position: bottom;
-    z-index: -1;
+    z-index: 1;
+    filter: var(--white);
 }
 
 .second-wave {
     position: absolute;
     rotate: 180deg;
     bottom: -100px;
-    z-index: -1;
+    z-index: 1;
+    filter: var(--white);
 }
 
 /* Container/Section Styles ---------------------------------------------------- */
@@ -405,7 +421,7 @@ main p {
     transition: var(--hover-transition);
     text-decoration: none;
     position: relative;
-    background: var(--white);
+    background: var(--background);
 }
 
 .project-card-container img {

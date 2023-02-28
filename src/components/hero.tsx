@@ -3,7 +3,7 @@ import Spline from '@splinetool/react-spline';
 
 export default function Hero() {
 
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState<boolean>(true);
   
 
   return (
