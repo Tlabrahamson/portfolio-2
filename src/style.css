@@ -6,6 +6,8 @@
     --white: #f7faff;
     --about-bg: #112D4E;
     --active-nav-bg: #dde7ff7b; 
+    --project-card-bg: #f7faff;
+    --project-card-box-shadow: 0 4px 8px 0 #52525233, 0 6px 20px 0 #9b9b9b30;
     --hover-transition: all ease .3s;
     --container-spacing: 8rem;
     --mobile-container-spacing: 3rem;
@@ -14,11 +16,53 @@
 }
 
 [data-theme='dark'] {
+    --primary: #DFDFDF;
+    --secondary: #BB86FC;
+    --background: #121212;
+    --about-bg: #1D1D1D;
+    --active-nav-bg: #2222227b;
+    --project-card-bg: #1D1D1D;
+    --project-card-box-shadow: none;
+}
+
+[data-theme='cyber'] {
     --primary: #f4d676;
     --secondary: #ff1690;
     --background: #0d0221;
     --about-bg: #160040;
-    --active-nav-bg: #2222227b;
+    --active-nav-bg: #1b18227b;
+    --project-card-bg: #160040;
+    --project-card-box-shadow: none;
+}
+
+[data-theme='pastel'] {
+    --primary: #AA96DA;
+    --secondary: #FCBAD3;
+    --background: #FFFFD2;
+    --about-bg: #A8D8EA;
+    --active-nav-bg: #f7f8a87b;
+    --project-card-bg: #f7faff;
+    --project-card-box-shadow: none;
+}
+
+[data-theme='greens'] {
+    --primary: #40513B;
+    --secondary: #609966;
+    --background: #EDF1D6;
+    --about-bg: #40513B;
+    --active-nav-bg: #b6f0aa7b;
+    --project-card-bg: #e1eedc;
+    --project-card-box-shadow: none;
+}
+
+[data-theme='mcdonalds'] {
+    --primary: #FFF323;
+    --secondary: #FFCA03;
+    --background: #F90716;
+    --about-bg: #993000;
+    --active-nav-bg: #ff4f4f7b;
+    --project-card-bg: #993000;
+    --project-card-box-shadow: none;
 }
 
 * {
@@ -88,7 +132,17 @@ img {
 
 .theme-select {
     position: fixed;
+    right: 2rem;
+    top: 16px;
+    transform: translate(0, -50%);
     z-index: 6;
+    border: solid 2px var(--primary);
+    background: transparent;
+    color: var(--primary);
+}
+
+.theme-select option {
+    background: var(--background);
 }
 
 #navbar {
@@ -123,7 +177,7 @@ img {
 
 #navbar button:hover {
     background: var(--primary);
-    color: var(--white);
+    color: var(--background);
 }
 
 .nav-list {
@@ -329,7 +383,7 @@ main p {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: var(--white);
+    background-color: var(--primary);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -350,7 +404,7 @@ main p {
     width: 12px;
     height: 12px;
     right: -10px;
-    background-color: var(--white);
+    background-color: var(--project-card-bg);
     border: 4px solid var(--secondary);
     top: 22px;
     border-radius: 50%;
@@ -373,9 +427,9 @@ main p {
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid var(--white);
+    border: medium solid var(--project-card-bg);
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent var(--white);
+    border-color: transparent transparent transparent var(--project-card-bg);
 }
 
 .right::before {
@@ -386,9 +440,9 @@ main p {
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid var(--white);
+    border: medium solid var(--project-card-bg);
     border-width: 10px 10px 10px 0;
-    border-color: transparent var(--white) transparent transparent;
+    border-color: transparent var(--project-card-bg) transparent transparent;
 }
 
 .right::after {
@@ -397,14 +451,18 @@ main p {
 
 .timeline-content {
     padding: 20px 30px;
-    background-color: var(--white);
+    background-color: var(--project-card-bg);
     position: relative;
     border-radius: 6px;
-    box-shadow: 0 4px 8px 0 rgba(82, 82, 82, 0.2), 0 6px 20px 0 rgba(155, 155, 155, 0.19);
+    box-shadow: var(--project-card-box-shadow);
 }
 
 .timeline-content h4 {
-    color: var(--about-bg);
+    color: var(--secondary);
+}
+
+.timeline-container p {
+    color: var(--primary);
 }
 
 .projects-container {
@@ -425,29 +483,33 @@ main p {
 .project-card-container {
     width: 100%;
     max-width: 400px;
-    padding: 1.5rem 1rem;
-    box-shadow: 0 4px 8px 0 rgba(82, 82, 82, 0.2), 0 6px 20px 0 rgba(155, 155, 155, 0.19);
+    padding: 1rem 1rem;
+    box-shadow: var(--project-card-box-shadow);
     cursor: pointer;
     transition: var(--hover-transition);
     text-decoration: none;
     position: relative;
-    background: var(--white);
+    background: var(--project-card-bg);
+    padding-top: 220px;
 }
 
 .project-card-container h4 {
-    color: var(--about-bg);
+    color: var(--secondary);
+    padding-bottom: .5rem;
 }
 
 .project-card-container img {
     width: 100%;
     height: auto;
-    padding: 1rem 0;
     filter: grayscale(1);
     transition: var(--hover-transition);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .project-card-container p {
-    padding-bottom: 1rem;
+    color: var(--primary);
 }
 
 .project-card-container a {
@@ -646,7 +708,6 @@ footer {
     
     .timeline-content {
         padding: 20px 30px;
-        background-color: white;
         position: relative;
         border-radius: 6px;
     }
