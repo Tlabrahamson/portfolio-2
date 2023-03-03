@@ -6,6 +6,13 @@ import designFour from '../images/spacey.svg';
 import designFive from '../images/SYNTH.gif';
 import designSix from '../images/cocktail.svg';
 
+// https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874744/Portfolio/dodeca_vzsnsu.webp
+// https://res.cloudinary.com/dyhl0yyml/image/upload/v1677874743/Portfolio/flourish_esczoh.svg
+// https://res.cloudinary.com/dyhl0yyml/image/upload/v1677874742/Portfolio/spacey_whelqa.svg
+// https://res.cloudinary.com/dyhl0yyml/image/upload/v1677874741/Portfolio/dino-digs_smr9ep.svg
+// https://res.cloudinary.com/dyhl0yyml/image/upload/v1677874741/Portfolio/cocktail_usqsn6.svg
+// https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874746/Portfolio/SYNTH_a5txzu.gif
+
 export default function Design() {
 
   return (
