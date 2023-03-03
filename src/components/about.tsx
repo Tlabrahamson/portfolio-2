@@ -1,6 +1,11 @@
 import React from 'react'
 
 export default function About() {
+  // const [briefAboutMe, setBriefAboutMe] = useState('');
+  // const [moreAboutMe, setMoreAboutMe] = useState('');
+  
+  // console.log('The secret is:', process.env.TEST_VAR)
+
     let currentYear = new Date().getFullYear();
     let webDevStartDate = currentYear - 2020;
 
@@ -15,6 +20,7 @@ export default function About() {
       <div className='about-container'>
           <div className='about-section'>
             <h3 className='large-heading'>About<span>:</span></h3>
+            {/* {briefAboutMe && <p>I'm a software developer based in Birmingham, AL with {webDevStartDate} years in professional experience.</p>} */}
             <p>
               As a highly motivated software developer based in Birmingham, AL, I offer a unique blend of technical proficiency and an eye for design, 
               having honed my skills over the course of {webDevStartDate} years in various web development capacities, including internships, freelance work, 
