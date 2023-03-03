@@ -4,6 +4,7 @@ import Hero from './components/hero';
 import About from './components/about';
 import Timeline from './components/timeline';
 import Projects from './components/projects';
+import OutOfContent from './components/outOfContent';
 import Footer from './components/footer';
 import './style.css';
 
@@ -39,6 +40,7 @@ function App() {
         <About/>
         <Timeline/>
         <Projects/>
+        <OutOfContent />
       </main>
       <Footer/>
     </div>
