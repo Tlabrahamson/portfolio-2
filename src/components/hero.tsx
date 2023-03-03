@@ -4,7 +4,6 @@ import Spline from '@splinetool/react-spline';
 export default function Hero() {
 
   const [loading, setLoading] = useState<boolean>(true);
-  
 
   return (
     <div className='hero-container'>
