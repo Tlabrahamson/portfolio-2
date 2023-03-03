@@ -371,6 +371,7 @@ main p {
 
 .about-container,
 .projects-container,
+.design-container,
 .out-of-content-container {
     position: relative;
     margin-bottom: var(--container-spacing);
@@ -492,6 +493,7 @@ main p {
 }
 
 .projects-container,
+.design-container,
 .out-of-content-container {
     margin: 0 auto 8rem auto;
     width: 1000px;
@@ -536,6 +538,7 @@ main p {
 }
 
 .project-card-container p,
+.design-container p,
 .out-of-content-container p {
     color: var(--primary);
 }
@@ -551,6 +554,33 @@ main p {
 
 .project-card-container:hover > .card-image {
     filter: grayscale(0);
+}
+
+.design-grid-section {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    /* Your container needs a fixed height, and it 
+    * needs to be taller than your tallest column. */
+    height: 1700px;
+    margin-top: 6rem;
+}
+
+.design-grid-section img:nth-child(3n+1) { order: 1; }
+.design-grid-section img:nth-child(3n+2) { order: 2; }
+.design-grid-section img:nth-child(3n)   { order: 3; }
+
+.design-grid-section::before,
+.design-grid-section::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+
+.design-grid-section img {
+    width: 32%;
+    margin-bottom: 2%;
 }
 
 .joke-button {
@@ -660,12 +690,14 @@ footer {
 
     .about-container,
     .projects-container,
+    .design-container,
     .out-of-content-container {
         width: 100%;
     }
 
     .about-section,
     .projects-section,
+    .design-container,
     .out-of-content-section {
         padding: var(--mobile-container-padding);
     }
@@ -774,6 +806,7 @@ footer {
     }
 
     .projects-container,
+    .design-container,
     .out-of-content-container {
         margin-bottom: 2rem;
     }
@@ -781,6 +814,10 @@ footer {
     .projects-grid {
         justify-content: center;
         row-gap: 4rem;
+        margin-top: 4rem;
+    }
+
+    .design-grid-section {
         margin-top: 4rem;
     }
 
