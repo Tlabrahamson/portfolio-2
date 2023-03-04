@@ -5,6 +5,7 @@
     --background: #f1f5ff;
     --white: #f7faff;
     --about-bg: #112D4E;
+    --design-bg: #DBE2EF;
     --active-nav-bg: #dde7ff7b; 
     --project-card-bg: #f7faff;
     --project-card-box-shadow: 0 4px 8px 0 #52525233, 0 6px 20px 0 #9b9b9b30;
@@ -21,6 +22,7 @@
     --secondary: #BB86FC;
     --background: #121212;
     --about-bg: #1D1D1D;
+    --design-bg: #000;
     --active-nav-bg: #2222227b;
     --project-card-bg: #1D1D1D;
     --project-card-box-shadow: none;
@@ -32,6 +34,7 @@
     --secondary: #ff1690;
     --background: #0d0221;
     --about-bg: #160040;
+    --design-bg: #160040;
     --active-nav-bg: #1b18227b;
     --project-card-bg: #160040;
     --project-card-box-shadow: none;
@@ -43,6 +46,7 @@
     --secondary: #FCBAD3;
     --background: #FFFFD2;
     --about-bg: #A8D8EA;
+    --design-bg: #DEFCF9;
     --active-nav-bg: #f7f8a87b;
     --project-card-bg: #f7faff;
     --project-card-box-shadow: 0 4px 8px 0 #52525233, 0 6px 20px 0 #9b9b9b30;
@@ -54,6 +58,7 @@
     --secondary: #609966;
     --background: #EDF1D6;
     --about-bg: #40513B;
+    --design-bg: #c4dfa3;
     --active-nav-bg: #b6f0aa7b;
     --project-card-bg: #e1eedc;
     --project-card-box-shadow: 0 4px 8px 0 #52525233, 0 6px 20px 0 #9b9b9b30;
@@ -65,6 +70,7 @@
     --secondary: #FFCA03;
     --background: #F90716;
     --about-bg: #993000;
+    --design-bg: #993000;
     --active-nav-bg: #ff4f4f7b;
     --project-card-bg: #993000;
     --project-card-box-shadow: none;
@@ -338,12 +344,17 @@ main p {
     position: relative;
 }
 
-.wave-border {
+.design-background {
+    background: var(--design-bg);
+    position: relative;
+}
+
+/* .wave-border {
     position: absolute;
     top: -110px;
     object-position: bottom;
     z-index: 1;
-}
+} */
 .wave-border #Vector {
     fill: var(--secondary);
 }
@@ -520,6 +531,7 @@ main p {
     position: relative;
     background: var(--project-card-bg);
     padding-top: 220px;
+    z-index: 1;
 }
 
 .project-card-container h4 {
@@ -585,6 +597,25 @@ main p {
 .design-grid-section video {
     width: 32%;
     margin-bottom: 2%;
+}
+
+.design-wave {
+    position: absolute;
+    top: -100px;
+    object-position: bottom;
+    z-index: 0;
+}
+
+.design-second-wave {
+    position: absolute;
+    rotate: 180deg;
+    bottom: -100px;
+    z-index: 0;
+}
+
+.design-wave #Vector,
+.design-second-wave #Vector-two {
+    fill: var(--design-bg);
 }
 
 .joke-button {
