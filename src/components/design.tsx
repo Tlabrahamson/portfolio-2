@@ -16,7 +16,9 @@ export default function Design() {
             <img src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874744/Portfolio/dodeca_vzsnsu.svg" alt="Dodeca Landing Page" />
             <img src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874743/Portfolio/flourish_esczoh.svg" alt="Flourish Landing Page" />
             <img src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874742/Portfolio/spacey_whelqa.svg" alt="Spacey Landing Page" />
-            {/* <img src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874746/Portfolio/SYNTH_a5txzu.gif" alt="SYNTH. Hero" /> */}
+            <video autoPlay={true} loop={true} muted={true} width={300}>
+              <source src="https://res.cloudinary.com/dyhl0yyml/video/upload/v1677902180/Portfolio/SYNTH_nm32hz.webm" type="video/webm" />
+            </video>
             <img src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874741/Portfolio/cocktail_usqsn6.svg" alt="Cocktail Roulette" />
         </div>
       </div>

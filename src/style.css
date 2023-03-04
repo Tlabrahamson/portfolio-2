@@ -485,7 +485,7 @@ main p {
 }
 
 .timeline-content h4 {
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .timeline-container p {
@@ -523,7 +523,7 @@ main p {
 }
 
 .project-card-container h4 {
-    color: var(--secondary);
+    color: var(--primary);
     padding-bottom: .5rem;
 }
 
@@ -560,15 +560,18 @@ main p {
     display: flex;
     flex-flow: column wrap;
     align-content: space-between;
-    /* Your container needs a fixed height, and it 
-    * needs to be taller than your tallest column. */
-    height: 1700px;
+    max-height: 1700px;
     margin-top: 6rem;
+    width: 100%;
+    padding: 0 1rem;
 }
 
-.design-grid-section img:nth-child(3n+1) { order: 1; }
-.design-grid-section img:nth-child(3n+2) { order: 2; }
-.design-grid-section img:nth-child(3n)   { order: 3; }
+.design-grid-section img:nth-child(3n+1),
+.design-grid-section video:nth-child(3n+1) { order: 1; }
+.design-grid-section img:nth-child(3n+2),
+.design-grid-section video:nth-child(3n+2) { order: 2; }
+.design-grid-section img:nth-child(3n),
+.design-grid-section video:nth-child(3n)   { order: 3; }
 
 .design-grid-section::before,
 .design-grid-section::after {
@@ -578,7 +581,8 @@ main p {
   order: 2;
 }
 
-.design-grid-section img {
+.design-grid-section img,
+.design-grid-section video {
     width: 32%;
     margin-bottom: 2%;
 }
@@ -818,10 +822,20 @@ footer {
     }
 
     .design-grid-section {
-        margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            column-gap: 1rem;
+            max-height: 100%; 
+            margin-top: 4rem;
+            width: 100%;
     }
 
-
+    .design-grid-section img,
+    .design-grid-section video {
+        width: 100%;
+        margin-bottom: 2%;
+    }
 }
 
 @media (max-width: 456px) {
