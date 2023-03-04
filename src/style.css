@@ -647,6 +647,15 @@ main p {
     border: solid 2px var(--background);
 }
 
+.joke-text {
+    opacity: 0;
+    transition: var(--hover-transition);
+  }
+  
+  .joke-text.show {
+    opacity: 1;
+  }
+
 /* Footer Styles --------------------------------------------------- */
 
 footer {
