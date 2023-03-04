@@ -5,13 +5,18 @@ export default function OutOfContent() {
 
     const [dadJoke, setDadJoke] = useState('');
     const [loading, setLoading] = useState(false);
+    const [visible, setVisible] = useState(false);
 
     const requestDadJoke = async () => {
         try {
+            setVisible(false);
             setLoading(true);
             let dadJokeRequest = await axios.get('https://icanhazdadjoke.com/', {headers: {'Accept': 'application/json'}})
-            setDadJoke(dadJokeRequest.data.joke)
-            setLoading(false);
+            setTimeout(() => {
+              setDadJoke(dadJokeRequest.data.joke)
+              setVisible(true);
+              setLoading(false);
+            }, 400)
         } catch(error) {
             console.log(error);
             setLoading(false);
@@ -28,10 +33,7 @@ export default function OutOfContent() {
             </p>
 
             <button className='joke-button' onClick={requestDadJoke}>{loading ? (<div className='button-spinning-loader'></div>) : ('Tell me a joke')}</button>
-
-            {dadJoke && (
-                <p>{dadJoke}</p>
-            )}
+            <p className={`joke-text ${visible ? 'show' : ''}`}>{dadJoke}</p>
         </div>
       </div>
     </div>
