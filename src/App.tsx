@@ -12,14 +12,11 @@ import './style.css';
 function App() {
 
   // Things to add:
-  // 1. Add some tabs to the about section that allow you to select a short, medium, lengthy, or an exagerated story by chatGPT
-  // 2. Customize select for the theme selector that doesn't look bad
-  // 3. Upload designs to Cloudinary and serve them optimized
-  // 4. Add some animations to the timeline content as well as some of the other bits
-  // 5. In the Out of Content section, add one or two more options for novelty sake
-  // 6. Custom cursor?
-  // 7. Do something about the logo/text.
-  // 8. More color themes :P
+  // 1. Add some animations to the timeline content as well as some of the other bits
+  // 2. In the Out of Content section, add one or two more options for novelty sake
+  // 3. Custom cursor?
+  // 4. Do something about the logo/text.
+  // 5. More color themes :P
 
   const [theme, setTheme] = useState<string>(localStorage.getItem('theme') || '');
 
@@ -46,6 +43,14 @@ function App() {
         <option value="greens">Greens</option>
         <option value="mcdonalds">McDonalds (Cursed)</option>
       </select>
+      <div className='theme-color-container'>
+        <div className='theme-color-primary'></div>
+        <div className='theme-color-secondary'></div>
+        <div className='theme-color-background'></div>
+        <div className='theme-color-white'></div>
+        <div className='theme-color-about'></div>
+        <div className='theme-color-design'></div>
+      </div>
       <Navbar/>
       <main>
         <Hero/>
