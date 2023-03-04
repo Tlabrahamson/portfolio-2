@@ -29,12 +29,7 @@ export default function Navbar() {
   return (
     <header id="navbar">
       <h1 className='logo'>TA</h1>
-      {/* <ul className='nav-list'>
-        <li className='nav-link'><a href="/">About</a></li>
-        <li className='nav-link'><a href="/">Projects</a></li>
-      </ul> */}
       <button onClick={() => toggleContactModal()}>Contact</button>
-
       <div className='contact-modal'>
         <div className='contact-modal-content'>
           <p className='no-container-text'>If you'd like to chat, there are a few ways you can contact me:</p>
