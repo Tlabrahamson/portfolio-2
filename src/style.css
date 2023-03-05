@@ -468,7 +468,7 @@ main p {
 }
 
 .about-tabs:hover {
-    background: var(--design-bg);
+    background: var(--secondary);
     color: var(--primary);
 }
 
@@ -726,8 +726,14 @@ main p {
     transition: var(--hover-transition);
   }
   
-  .joke-text.show {
+  .joke-text.show,
+  .response-text.show {
     opacity: 1;
+  }
+
+  .response-text {
+    opacity: 0;
+    transition: var(--hover-transition);
   }
 
 /* Footer Styles --------------------------------------------------- */
