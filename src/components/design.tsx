@@ -1,4 +1,10 @@
 import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({
+    once: true
+});
 
 export default function Design() {
 
@@ -15,14 +21,14 @@ export default function Design() {
             </p>
         </div>
         <div className="design-grid-section">
-            <img src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874741/Portfolio/dino-digs_smr9ep.svg" alt="Dino Digs Landing Page" />
-            <img src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874744/Portfolio/dodeca_vzsnsu.svg" alt="Dodeca Landing Page" />
-            <img src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874743/Portfolio/flourish_esczoh.svg" alt="Flourish Landing Page" />
-            <img src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874742/Portfolio/spacey_whelqa.svg" alt="Spacey Landing Page" />
-            <video autoPlay={true} loop={true} muted={true} width={300}>
+            <img data-aos="fade-up" data-aos-duration="500" src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874741/Portfolio/dino-digs_smr9ep.svg" alt="Dino Digs Landing Page" />
+            <img data-aos="fade-up" data-aos-duration="500" src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874744/Portfolio/dodeca_vzsnsu.svg" alt="Dodeca Landing Page" />
+            <img data-aos="fade-up" data-aos-duration="500" src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874743/Portfolio/flourish_esczoh.svg" alt="Flourish Landing Page" />
+            <img data-aos="fade-up" data-aos-duration="500" src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874742/Portfolio/spacey_whelqa.svg" alt="Spacey Landing Page" />
+            <video data-aos="fade-up" data-aos-duration="500" autoPlay={true} loop={true} muted={true} width={300}>
               <source src="https://res.cloudinary.com/dyhl0yyml/video/upload/v1677902180/Portfolio/SYNTH_nm32hz.webm" type="video/webm" />
             </video>
-            <img src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874741/Portfolio/cocktail_usqsn6.svg" alt="Cocktail Roulette" />
+            <img data-aos="fade-up" data-aos-duration="500" src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874741/Portfolio/cocktail_usqsn6.svg" alt="Cocktail Roulette" />
         </div>
       </div>
       <svg width="1920" height="120" viewBox="0 0 1920 120" className='design-second-wave' fill="none" xmlns="http://www.w3.org/2000/svg">
