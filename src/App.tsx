@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet'
 import Navbar from './components/navbar';
 import Hero from './components/hero';
 import About from './components/about';
@@ -33,6 +34,11 @@ function App() {
 
   return (
     <div className="App" data-theme={theme}>
+      <Helmet>
+        <title>Tim Abrahamson | Software Developer</title>
+        <meta name="description" content="Hello, I'm Tim Abrahamson. I'm a software developer based out of Birmingham, AL" />
+        <meta name="keywords" content="Tim Abrahamson" />
+      </Helmet>
       <select onChange={changeTheme} value={theme} className='theme-select'>
         <option value="light">Light</option>
         <option value="dark">Dark</option>
