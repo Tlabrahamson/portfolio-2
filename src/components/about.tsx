@@ -20,13 +20,12 @@ export default function About() {
     try {
       setVisible(false);
       setLoading(true);
-      const prompt = ['Once upon a time there was a guy named Tim Abrahamson.', 'In present day, there is a guy named Tim.', "Tell me the plot of Star Wars but replace Luke Skywalker with Tim Abrahamson.", "Tell me the plot of Lord of the Rings but replace Frodo Baggins with Tim Abrahamson." ];
-      const modelEngine = 'davinci';
+      const prompt = ['Tell me the plot of a movie but replace the main character with Tim Abrahamson.', "Tell me the plot of Star Wars but replace Luke Skywalker with Tim Abrahamson.", "Tell me the plot of Lord of the Rings but replace Frodo Baggins with Tim Abrahamson." ];
+      const modelEngine = 'text-davinci-003';
       // Get random number 0 - 1 for more randomness...I need more prompts.
-      let randomPrompt = Math.floor(Math.random() * 4);
+      let randomPrompt = Math.floor(Math.random() * 3);
 
       const data = {
-        // model: "text-davinci-003",
         prompt: prompt[randomPrompt],
         temperature: 0.7,
         max_tokens: 256,
