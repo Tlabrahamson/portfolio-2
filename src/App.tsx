@@ -13,9 +13,9 @@ import './style.css';
 function App() {
 
   // Things to add:
-  // 1. In the Out of Content section, add one or two more options for novelty sake
-  // 2. Do something about the logo/text.
-  // 3. More color themes :P
+  // 1. Do something about the logo/text.
+  // 2. More color themes :P
+  // 3. Add custom spinning loader
 
   const [theme, setTheme] = useState<string>(localStorage.getItem('theme') || '');
 
