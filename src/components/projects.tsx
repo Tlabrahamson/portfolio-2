@@ -33,32 +33,6 @@ export default function Projects() {
                         a random cocktail with an image, ingredients, recommended glass, etc."
                         projectCardLink="https://cocktail-roulette.netlify.app/"
                     />
-                    {/* Alphabetty */}
-                    <ProjectCard 
-                        projectCardTitle="Alphabetty" 
-                        projectCardImage="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1673473752/Portfolio/alphabetty_wywv4e.webp" 
-                        projectCardImageAlt="The Alphabetty Project" 
-                        projectCardDescription="Alphabetty is an app I made for my kids when they were younger and beginning to learn the alphabet. It has a fixed scroll and 
-                        uses SVG to draw out each letter."
-                        projectCardLink="https://alphabetty.netlify.app/"
-                    />
-                    {/* Synth. */}
-                    <ProjectCard 
-                        projectCardTitle="Synth." 
-                        projectCardImage="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1673473752/Portfolio/synth_huejza.webp" 
-                        projectCardImageAlt="The Synth. Project" 
-                        projectCardDescription="Synth. is a colorful website I built using a synthwave color scheme. I dig the aesthetic."
-                        projectCardLink="https://synth-wav.netlify.app/"
-                    />
-                    {/* Dodeca */}
-                    <ProjectCard 
-                        projectCardTitle="Dodeca" 
-                        projectCardImage="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1673473752/Portfolio/dodeca_xehwd4.webp" 
-                        projectCardImageAlt="The Dodeca Project" 
-                        projectCardDescription="Dodcea is a website that I designed with Figma. I was going through a phase where I enjoyed designing landing pages
-                        and building them out."
-                        projectCardLink="https://dodeca.netlify.app/"
-                    />
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@
 :root {
     --primary: #112D4E;
     --secondary: #0296bb;
-    --background: #f1f5ff;
+    --background: #fff;
     --white: #f7faff;
     --about-bg: #112D4E;
     --design-bg: #DBE2EF;
@@ -154,8 +154,8 @@ img {
 .theme-select {
     opacity: 0;
     position: fixed;
-    right: 2rem;
-    top: 16px;
+    right: 11rem;
+    top: 3.25rem;
     transform: translate(0, -50%);
     z-index: 7;
     border: solid 2px var(--primary);
@@ -172,8 +172,9 @@ img {
 
 .theme-color-container {
     position: fixed;
-    right: 2rem;
-    top: 8px;
+    right: 11rem;
+    top: 3.25rem;
+    transform: translate(0, -50%);
     width: 20px;
     height: 20px;
     display: flex;

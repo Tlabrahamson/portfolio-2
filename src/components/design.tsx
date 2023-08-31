@@ -21,7 +21,6 @@ export default function Design() {
             </p>
         </div>
         <div className="design-grid-section">
-            <img data-aos="fade-up" data-aos-duration="500" src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874741/Portfolio/dino-digs_smr9ep.svg" alt="Dino Digs Landing Page" />
             <img data-aos="fade-up" data-aos-duration="500" src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874744/Portfolio/dodeca_vzsnsu.svg" alt="Dodeca Landing Page" />
             <img data-aos="fade-up" data-aos-duration="500" src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874743/Portfolio/flourish_esczoh.svg" alt="Flourish Landing Page" />
             <img data-aos="fade-up" data-aos-duration="500" src="https://res.cloudinary.com/dyhl0yyml/image/upload/q_auto/v1677874742/Portfolio/spacey_whelqa.svg" alt="Spacey Landing Page" />
